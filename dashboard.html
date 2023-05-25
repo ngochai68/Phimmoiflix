@@ -5,115 +5,112 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="css/dashboard.css" />
   </head>
-  <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    /* Định dạng CSS cho header, menu, và footer */
-    header {
-      text-align: center;
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-    }
-
-    nav {
-      display: flex;
-      flex-direction: column;
-      background-color: #f2f2f2;
-      width: 200px;
-      padding: 20px;
-      height: 100vh;
-      position: relative;
-    }
-
-    nav ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    nav ul li {
-      margin-bottom: 5px;
-    }
-
-    nav ul li a {
-      color: #333;
-      text-decoration: none;
-      display: block;
-      padding: 10px;
-      transition: background-color 0.3s ease;
-    }
-
-    nav ul li a:hover {
-      background-color: #ddd;
-    }
-
-    .admin-info {
-      position: absolute;
-      bottom: 50px;
-      left: 0;
-      width: 100%;
-      background-color: #f2f2f2;
-    }
-
-    .admin-info span {
-      display: block;
-      margin: auto;
-      margin-bottom: 10px;
-      font-weight: bold;
-    }
-
-    .logout-btn {
-      display: block;
-      width: 50%;
-      margin: auto;
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-
-    .logout-btn:hover {
-      background-color: #555;
-    }
-
-    footer {
-      text-align: center;
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
-      width: 100%;
-    }
-  </style>
   <body>
-    <header>
-      <h1>Trang chủ</h1>
-    </header>
-
-    <nav>
+    <div class="sidebar">
+      <div class="admin-title">Bảng điều khiển</div>
       <ul>
-        <li><a href="#">Trang chủ</a></li>
-        <li><a href="#">Quản lý phim</a></li>
-        <li><a href="#">Quản lý người dùng</a></li>
-        <li><a href="#">Quản lý gói vip</a></li>
-        <li><a href="#">Quản lý thể loại</a></li>
-        <li><a href="#">Quản lý đánh giá</a></li>
+        <li class="menu-active">Bảng điều khiển</li>
+        <li>Quản lý khách hàng</li>
+        <li>Quản lý phim</li>
+        <li>Quản lý gói VIP</li>
+        <li>Quản lý đánh giá</li>
       </ul>
-
-      <div class="admin-info">
-        <span>Nguyễn Ngọc Hải</span>
-        <a class="logout-btn" href="#">Đăng xuất</a>
+      <div class="admin-name">Nguyễn Ngọc Hải</div>
+      <div class="logout">Đăng xuất</div>
+    </div>
+    <div class="main-content">
+      <div class="quantity-report">
+        <div class="quantity-rpBlock">
+          <h2>686</h2>
+          <p>Tổng số khách hàng</p>
+        </div>
+        <div class="quantity-rpBlock">
+          <h2>3.000</h2>
+          <p>Tổng số phim</p>
+        </div>
+        <div class="quantity-rpBlock">
+          <h2>1.000.000</h2>
+          <p>Tổng số lượt xem</p>
+        </div>
       </div>
-    </nav>
-
-    <footer>
-      <p>Nguyễn Ngọc Hải</p>
-    </footer>
+      <div class="table-report">
+        <div class="table-report-block">
+          <h3>Bảng thống kê lượt xem và đánh giá phim</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Phim</th>
+                <th>Hình ảnh</th>
+                <th>Lượt xem</th>
+                <th>Đánh giá</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Trùng Khởi Chi Cực Hải Thính Lôi 2</td>
+                <td><img src="img/a_100423027_m_601_vi_m3_480_270.jpg" alt="Phim A" class="film-image" /></td>
+                <td>1000</td>
+                <td>4.5 / 5</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Thương Lan Quyết</td>
+                <td><img src="img/a_100472263_m_601_vi_m5_260_360.webp" alt="Phim B" class="film-image" /></td>
+                <td>500</td>
+                <td>3.8 / 5</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Chỉ Là Quan Hệ Hôn Nhân</td>
+                <td><img src="img/a_100481611_m_601_vi_260_360.webp" alt="Phim C" class="film-image" /></td>
+                <td>750</td>
+                <td>4.2 / 5</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-report-block">
+          <h3>Bảng thống kê khách hàng VIP</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Tên tài khoản</th>
+                <th>Hình ảnh</th>
+                <th>Số ngày sử dụng VIP</th>
+                <th>Tổng số tiền nạp</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Ngochai2201</td>
+                <td><img src="img/a_100423027_m_601_vi_m3_480_270.jpg" alt="Phim A" class="film-image" /></td>
+                <td>365</td>
+                <td>5.000.000 vnđ</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Duykhanh2349</td>
+                <td><img src="img/a_100472263_m_601_vi_m5_260_360.webp" alt="Phim B" class="film-image" /></td>
+                <td>200</td>
+                <td>3.000.000 vnđ</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Truclam349298</td>
+                <td><img src="img/a_100481611_m_601_vi_260_360.webp" alt="Phim C" class="film-image" /></td>
+                <td>50</td>
+                <td>1.000.000 vnđ</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
