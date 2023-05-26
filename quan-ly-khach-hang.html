@@ -1,260 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/quan-ly-khach-hang.css" />
-  </head>
-  <body>
-    <div class="sidebar">
-      <div class="admin-title">Bảng điều khiển</div>
-      <ul>
-        <li>Bảng điều khiển</li>
-        <li class="menu-active">Quản lý khách hàng</li>
-        <li>Quản lý phim</li>
-        <li>Quản lý gói VIP</li>
-        <li>Quản lý đánh giá</li>
-      </ul>
-      <div class="admin-name">Nguyễn Ngọc Hải</div>
-      <div class="logout">Đăng xuất</div>
-    </div>
-    <div class="main-content">
-      <div class="quantity-report">
-        <div class="quantity-rpBlock">
-          <h2>6.800</h2>
-          <p>Tổng số khách hàng</p>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Document</title>
+        <link rel="stylesheet" href="css/quan-ly-khach-hang.css"/>
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="admin-title">Bảng điều khiển</div>
+            <ul>
+                <li>
+                    <a href="dashboard.html">Bảng điều khiển</a>
+                </li>
+                <li class="menu-active">
+                    <a href="quan-ly-khach-hang.html">Quản lý khách hàng</a>
+                </li>
+                <li>
+                    <a href="quan-ly-phim.html">Quản lý phim</a>
+                </li>
+                <li>
+                    <a href="quan-ly-goi-vip.html">Quản lý gói VIP</a>
+                </li>
+                <li>
+                    <a href="quan-ly-danh-gia.html">Quản lý đánh giá</a>
+                </li>
+            </ul>
+            <div class="admin-name">Nguyễn Ngọc Hải</div>
+            <div class="logout">Đăng xuất</div>
         </div>
-        <div class="quantity-rpBlock">
-          <h2>680</h2>
-          <p>Khách hàng mới</p>
-        </div>
-        <div class="quantity-rpBlock">
-          <h2>480</h2>
-          <p>Khách hàng mua gói VIP</p>
-        </div>
-      </div>
-      <div class="container">
-        <div class="search-container">
-          <input type="text" placeholder="Tìm kiếm khách hàng..." />
-          <button>Tìm kiếm</button>
-        </div>
+        <div class="main-content">
+            <div class="quantity-report">
+                <div class="quantity-rpBlock">
+                    <h2>6.800</h2>
+                    <p>Tổng số khách hàng</p>
+                </div>
+                <div class="quantity-rpBlock">
+                    <h2>680</h2>
+                    <p>Khách hàng mới</p>
+                </div>
+                <div class="quantity-rpBlock">
+                    <h2>480</h2>
+                    <p>Khách hàng mua gói VIP</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="search-container">
+                    <input type="text" placeholder="Tìm kiếm khách hàng..."/>
+                    <button>Tìm kiếm</button>
+                </div>
 
-        <button class="add-customer-button">Thêm khách hàng</button>
+                <button class="add-customer-button">
+                    <a href="them-khach-hang.html">Thêm khách hàng</a>
+                </button>
 
-        <table>
-          <thead>
-            <tr>
-              <th>STT</th>
-              <th>Tên tài khoản</th>
-              <th>Email</th>
-              <th>Số điện thoại</th>
-              <th>Loại tài khoản</th>
-              <th>Số tiền đã nạp</th>
-              <th>Thao tác</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>JohnDoe</td>
-              <td>johndoe@example.com</td>
-              <td>0823787551</td>
-              <td>VIP</td>
-              <td>5.000.000</td>
-              <td class="actions">
-                <button>Sửa</button>
-                <button>Xóa</button>
-                <button>Block</button>
-              </td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>JohnDoe</td>
-              <td>johndoe@example.com</td>
-              <td>0823787551</td>
-              <td>VIP</td>
-              <td>5.000.000</td>
-              <td class="actions">
-                <button>Sửa</button>
-                <button>Xóa</button>
-                <button>Block</button>
-              </td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>JohnDoe</td>
-              <td>johndoe@example.com</td>
-              <td>0823787551</td>
-              <td>VIP</td>
-              <td>5.000.000</td>
-              <td class="actions">
-                <button>Sửa</button>
-                <button>Xóa</button>
-                <button>Block</button>
-              </td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>JohnDoe</td>
-              <td>johndoe@example.com</td>
-              <td>0823787551</td>
-              <td>VIP</td>
-              <td>5.000.000</td>
-              <td class="actions">
-                <button>Sửa</button>
-                <button>Xóa</button>
-                <button>Block</button>
-              </td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>JohnDoe</td>
-              <td>johndoe@example.com</td>
-              <td>0823787551</td>
-              <td>VIP</td>
-              <td>5.000.000</td>
-              <td class="actions">
-                <button>Sửa</button>
-                <button>Xóa</button>
-                <button>Block</button>
-              </td>
-            </tr>
-            <tr>
-              <td>6</td>
-              <td>JohnDoe</td>
-              <td>johndoe@example.com</td>
-              <td>0823787551</td>
-              <td>VIP</td>
-              <td>5.000.000</td>
-              <td class="actions">
-                <button>Sửa</button>
-                <button>Xóa</button>
-                <button>Block</button>
-              </td>
-            </tr>
-            <tr>
-              <td>7</td>
-              <td>JaneSmith</td>
-              <td>janesmith@example.com</td>
-              <td>0823787551</td>
-              <td>Thường</td>
-              <td>2.000.000</td>
-              <td class="actions">
-                <button>Sửa</button>
-                <button>Xóa</button>
-                <button>Block</button>
-              </td>
-            </tr>
-            <tr>
-              <td>8</td>
-              <td>JaneSmith</td>
-              <td>janesmith@example.com</td>
-              <td>0823787551</td>
-              <td>Thường</td>
-              <td>2.000.000</td>
-              <td class="actions">
-                <button>Sửa</button>
-                <button>Xóa</button>
-                <button>Block</button>
-              </td>
-            </tr>
-            <tr>
-              <td>9</td>
-              <td>JaneSmith</td>
-              <td>janesmith@example.com</td>
-              <td>0823787551</td>
-              <td>Thường</td>
-              <td>2.000.000</td>
-              <td class="actions">
-                <button>Sửa</button>
-                <button>Xóa</button>
-                <button>Block</button>
-              </td>
-            </tr>
-            <tr>
-              <td>10</td>
-              <td>JaneSmith</td>
-              <td>janesmith@example.com</td>
-              <td>0823787551</td>
-              <td>Thường</td>
-              <td>2.000.000</td>
-              <td class="actions">
-                <button>Sửa</button>
-                <button>Xóa</button>
-                <button>Block</button>
-              </td>
-            </tr>
-            <tr>
-              <td>11</td>
-              <td>JaneSmith</td>
-              <td>janesmith@example.com</td>
-              <td>0823787551</td>
-              <td>Thường</td>
-              <td>2.000.000</td>
-              <td class="actions">
-                <button>Sửa</button>
-                <button>Xóa</button>
-                <button>Block</button>
-              </td>
-            </tr>
-            <tr>
-              <td>12</td>
-              <td>JaneSmith</td>
-              <td>janesmith@example.com</td>
-              <td>0823787551</td>
-              <td>Thường</td>
-              <td>2.000.000</td>
-              <td class="actions">
-                <button>Sửa</button>
-                <button>Xóa</button>
-                <button>Block</button>
-              </td>
-            </tr>
-            <tr>
-              <td>13</td>
-              <td>JaneSmith</td>
-              <td>janesmith@example.com</td>
-              <td>0823787551</td>
-              <td>Thường</td>
-              <td>2.000.000</td>
-              <td class="actions">
-                <button>Sửa</button>
-                <button>Xóa</button>
-                <button>Block</button>
-              </td>
-            </tr>
-            <tr>
-              <td>14</td>
-              <td>JaneSmith</td>
-              <td>janesmith@example.com</td>
-              <td>0823787551</td>
-              <td>Thường</td>
-              <td>2.000.000</td>
-              <td class="actions">
-                <button>Sửa</button>
-                <button>Xóa</button>
-                <button>Block</button>
-              </td>
-            </tr>
-            <tr>
-              <td>15</td>
-              <td>JaneSmith</td>
-              <td>janesmith@example.com</td>
-              <td>0823787551</td>
-              <td>Thường</td>
-              <td>2.000.000</td>
-              <td class="actions">
-                <button>Sửa</button>
-                <button>Xóa</button>
-                <button>Block</button>
-              </td>
-            </tr>
-          </tbody>
-          
-        </table>
-      </div>
-    </div>
-  </body>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Tên tài khoản</th>
+                            <th>Email</th>
+                            <th>Số điện thoại</th>
+                            <th>Loại tài khoản</th>
+                            <th>Số tiền đã nạp</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>JohnDoe</td>
+                            <td>johndoe@example.com</td>
+                            <td>0823787551</td>
+                            <td>VIP</td>
+                            <td>5.000.000</td>
+                            <td class="actions">
+                                <button>Sửa</button>
+                                <button>Xóa</button>
+                                <button>Block</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>JohnDoe</td>
+                            <td>johndoe@example.com</td>
+                            <td>0823787551</td>
+                            <td>VIP</td>
+                            <td>5.000.000</td>
+                            <td class="actions">
+                                <button>Sửa</button>
+                                <button>Xóa</button>
+                                <button>Block</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>JohnDoe</td>
+                            <td>johndoe@example.com</td>
+                            <td>0823787551</td>
+                            <td>VIP</td>
+                            <td>5.000.000</td>
+                            <td class="actions">
+                                <button>Sửa</button>
+                                <button>Xóa</button>
+                                <button>Block</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>JohnDoe</td>
+                            <td>johndoe@example.com</td>
+                            <td>0823787551</td>
+                            <td>VIP</td>
+                            <td>5.000.000</td>
+                            <td class="actions">
+                                <button>Sửa</button>
+                                <button>Xóa</button>
+                                <button>Block</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>JohnDoe</td>
+                            <td>johndoe@example.com</td>
+                            <td>0823787551</td>
+                            <td>VIP</td>
+                            <td>5.000.000</td>
+                            <td class="actions">
+                                <button>Sửa</button>
+                                <button>Xóa</button>
+                                <button>Block</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>JohnDoe</td>
+                            <td>johndoe@example.com</td>
+                            <td>0823787551</td>
+                            <td>VIP</td>
+                            <td>5.000.000</td>
+                            <td class="actions">
+                                <button>Sửa</button>
+                                <button>Xóa</button>
+                                <button>Block</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>JaneSmith</td>
+                            <td>janesmith@example.com</td>
+                            <td>0823787551</td>
+                            <td>Thường</td>
+                            <td>2.000.000</td>
+                            <td class="actions">
+                                <button>Sửa</button>
+                                <button>Xóa</button>
+                                <button>Block</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>JaneSmith</td>
+                            <td>janesmith@example.com</td>
+                            <td>0823787551</td>
+                            <td>Thường</td>
+                            <td>2.000.000</td>
+                            <td class="actions">
+                                <button>Sửa</button>
+                                <button>Xóa</button>
+                                <button>Block</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>JaneSmith</td>
+                            <td>janesmith@example.com</td>
+                            <td>0823787551</td>
+                            <td>Thường</td>
+                            <td>2.000.000</td>
+                            <td class="actions">
+                                <button>Sửa</button>
+                                <button>Xóa</button>
+                                <button>Block</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>JaneSmith</td>
+                            <td>janesmith@example.com</td>
+                            <td>0823787551</td>
+                            <td>Thường</td>
+                            <td>2.000.000</td>
+                            <td class="actions">
+                                <button>Sửa</button>
+                                <button>Xóa</button>
+                                <button>Block</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>JaneSmith</td>
+                            <td>janesmith@example.com</td>
+                            <td>0823787551</td>
+                            <td>Thường</td>
+                            <td>2.000.000</td>
+                            <td class="actions">
+                                <button>Sửa</button>
+                                <button>Xóa</button>
+                                <button>Block</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>JaneSmith</td>
+                            <td>janesmith@example.com</td>
+                            <td>0823787551</td>
+                            <td>Thường</td>
+                            <td>2.000.000</td>
+                            <td class="actions">
+                                <button>Sửa</button>
+                                <button>Xóa</button>
+                                <button>Block</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>JaneSmith</td>
+                            <td>janesmith@example.com</td>
+                            <td>0823787551</td>
+                            <td>Thường</td>
+                            <td>2.000.000</td>
+                            <td class="actions">
+                                <button>Sửa</button>
+                                <button>Xóa</button>
+                                <button>Block</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>JaneSmith</td>
+                            <td>janesmith@example.com</td>
+                            <td>0823787551</td>
+                            <td>Thường</td>
+                            <td>2.000.000</td>
+                            <td class="actions">
+                                <button>Sửa</button>
+                                <button>Xóa</button>
+                                <button>Block</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>JaneSmith</td>
+                            <td>janesmith@example.com</td>
+                            <td>0823787551</td>
+                            <td>Thường</td>
+                            <td>2.000.000</td>
+                            <td class="actions">
+                                <button>Sửa</button>
+                                <button>Xóa</button>
+                                <button>Block</button>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </body>
 </html>

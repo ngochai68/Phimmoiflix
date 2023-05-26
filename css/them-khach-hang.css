@@ -32,10 +32,16 @@
 }
 
 .sidebar li {
-  padding: 15px 20px;
   cursor: pointer;
   font-size: 18px;
   opacity: 0.6;
+}
+
+.sidebar li a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #fff;
 }
 
 .sidebar .menu-active {

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Document</title>
+        <link rel="stylesheet" href="css/quan-ly-goi-vip.css"/>
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="admin-title">Bảng điều khiển</div>
+            <ul>
+                <li>
+                    <a href="dashboard.html">Bảng điều khiển</a>
+                </li>
+                <li>
+                    <a href="quan-ly-khach-hang.html">Quản lý khách hàng</a>
+                </li>
+                <li>
+                    <a href="quan-ly-phim.html">Quản lý phim</a>
+                </li>
+                <li class="menu-active">
+                    <a href="quan-ly-goi-vip.html">Quản lý gói VIP</a>
+                </li>
+                <li>
+                    <a href="quan-ly-danh-gia.html">Quản lý đánh giá</a>
+                </li>
+            </ul>
+            <div class="admin-name">Nguyễn Ngọc Hải</div>
+            <div class="logout">Đăng xuất</div>
+        </div>
+        <div class="main-content">
+            <h2>Quản lý gói VIP</h2>
+
+            <h3>Danh sách gói VIP</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Tên gói</th>
+                        <th>Giá cả</th>
+                        <th>Thời gian sử dụng</th>
+                        <th>Doanh thu</th>
+                        <th>Mô tả</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Gói VIP Silver</td>
+                        <td>500.000</td>
+                        <td>1 tháng</td>
+                        <td>100.000.000</td>
+                        <td>Gói VIP Silver với các tính năng đặc biệt</td>
+                        <td>
+                            <button>Sửa</button>
+                            <button>Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Gói VIP Gold</td>
+                        <td>1.500.000</td>
+                        <td>3 tháng</td>
+                        <td>50.000.000</td>
+                        <td>Gói VIP Gold với các tính năng cao cấp</td>
+                        <td>
+                            <button>Sửa</button>
+                            <button>Xóa</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="form-container">
+                <h3>Thêm gói VIP</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="ten-goi">Tên gói:</label>
+                        <input type="text" id="ten-goi" name="ten-goi">
+                    </div>
+                    <div class="form-group">
+                        <label for="gia">Giá:</label>
+                        <input type="text" id="gia" name="gia">
+                    </div>
+                    <div class="form-group">
+                        <label for="thoi-gian-su-dung">Thời gian sử dụng:</label>
+                        <select id="thoi-gian-su-dung" name="thoi-gian-su-dung">
+                            <option value="1">1 tháng</option>
+                            <option value="3">3 tháng</option>
+                            <option value="6">6 tháng</option>
+                            <option value="12">12 tháng</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="tinh-nang">Tính năng:</label>
+                        <input type="text" id="tinh-nang" name="tinh-nang">
+                    </div>
+                    <div class="form-group">
+                        <label for="mo-ta">Mô tả:</label>
+                        <textarea id="mo-ta" name="mo-ta"></textarea>
+                    </div>
+
+                    <button type="submit">Thêm</button>
+                </form>
+            </div>
+            <h3>Danh sách khách hàng VIP</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Tên</th>
+                        <th>Email</th>
+                        <th>Ngày đăng ký</th>
+                        <th>Thời gian sử dụng gói</th>
+                        <th>Số tiền đã thanh toán</th>
+                        <th>Trạng thái</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Nguyễn Văn A</td>
+                        <td>example1@gmail.com</td>
+                        <td>2023-01-15</td>
+                        <td>6 tháng</td>
+                        <td>5.000.000</td>
+                        <td>Đang hoạt động</td>
+                        <td>
+                            <button>Gia hạn</button>
+                            <button>Hủy gói</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Trần Thị B</td>
+                        <td>example2@gmail.com</td>
+                        <td>2023-02-20</td>
+                        <td>3 tháng</td>
+                        <td>3.000.000</td>
+                        <td>Đang hoạt động</td>
+                        <td>
+                            <button>Gia hạn</button>
+                            <button>Hủy gói</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

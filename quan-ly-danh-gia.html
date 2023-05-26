@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Document</title>
+        <link rel="stylesheet" href="css/quan-ly-danh-gia.css"/>
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="admin-title">Bảng điều khiển</div>
+            <ul>
+                <li>
+                    <a href="dashboard.html">Bảng điều khiển</a>
+                </li>
+                <li>
+                    <a href="quan-ly-khach-hang.html">Quản lý khách hàng</a>
+                </li>
+                <li>
+                    <a href="quan-ly-phim.html">Quản lý phim</a>
+                </li>
+                <li>
+                    <a href="quan-ly-goi-vip.html">Quản lý gói VIP</a>
+                </li>
+                <li class="menu-active">
+                    <a href="quan-ly-danh-gia.html">Quản lý đánh giá</a>
+                </li>
+            </ul>
+            <div class="admin-name">Nguyễn Ngọc Hải</div>
+            <div class="logout">Đăng xuất</div>
+        </div>
+        <div class="main-content">
+            <h1>Quản lý đánh giá</h1>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm...">
+                <select>
+                    <option value="all">Tất cả</option>
+                    <option value="name">Tên khách hàng</option>
+                    <option value="movie">Tên phim</option>
+                    <option value="rating">Điểm đánh giá</option>
+                </select>
+                <button class="button">Tìm kiếm</button>
+            </div>
+            <div class="review-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Tên khách hàng</th>
+                            <th>Tên phim</th>
+                            <th>Nội dung đánh giá</th>
+                            <th>Điểm đánh giá</th>
+                            <th>Ngày đánh giá</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Nguyễn Văn A</td>
+                            <td>Phim A</td>
+                            <td>Phim rất hay!</td>
+                            <td>5/5</td>
+                            <td>01/01/2023</td>
+                            <td class="action-buttons">
+                                <button class="button">Xem chi tiết</button>
+                                <button class="button">Phản hồi</button>
+                                <button class="button">Xóa</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Nguyễn Thị B</td>
+                            <td>Phim B</td>
+                            <td>Phim thú vị!</td>
+                            <td>4/5</td>
+                            <td>02/01/2023</td>
+                            <td class="action-buttons">
+                                <button class="button">Xem chi tiết</button>
+                                <button class="button">Phản hồi</button>
+                                <button class="button">Xóa</button>
+                            </td>
+                        </tr>
+                        <!-- Các hàng dữ liệu khác -->
+                    </tbody>
+                </table>
+            </div>
+        </body>
+    </body>
+</html>

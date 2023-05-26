@@ -32,10 +32,16 @@
 }
 
 .sidebar li {
-  padding: 15px 20px;
   cursor: pointer;
   font-size: 18px;
   opacity: 0.6;
+}
+
+.sidebar li a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #fff;
 }
 
 .sidebar .menu-active {
@@ -137,12 +143,19 @@
 }
 
 .add-customer-button {
-  padding: 8px 16px;
+  
   font-size: 16px;
   background-color: #4caf50;
-  color: #fff;
+ 
   border: none;
   cursor: pointer;
+}
+
+.add-customer-button a {
+  display: block;
+  text-decoration: none;
+  padding: 8px 16px;
+  color: #fff;
 }
 
 .add-customer-button:hover {
@@ -166,7 +179,7 @@ th {
   background-color: #f2f2f2;
 }
 
-td .actions button {
+tr .actions button {
   padding: 4px 8px;
   margin-right: 4px;
   font-size: 14px;

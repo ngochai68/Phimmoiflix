@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Document</title>
+        <link rel="stylesheet" href="css/them-phim.css"/>
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="admin-title">Bảng điều khiển</div>
+            <ul>
+                <li>
+                    <a href="dashboard.html">Bảng điều khiển</a>
+                </li>
+                <li>
+                    <a href="quan-ly-khach-hang.html">Quản lý khách hàng</a>
+                </li>
+                <li>
+                    <a href="quan-ly-phim.html">Quản lý phim</a>
+                </li>
+                <li>
+                    <a href="quan-ly-goi-vip.html">Quản lý gói VIP</a>
+                </li>
+                <li>
+                    <a href="quan-ly-danh-gia.html">Quản lý đánh giá</a>
+                </li>
+            </ul>
+            <div class="admin-name">Nguyễn Ngọc Hải</div>
+            <div class="logout">Đăng xuất</div>
+        </div>
+        <div class="main-content">
+            <div class="container">
+                <h3>Thêm phim</h3>
+
+                <form>
+                    <label for="movie-name">Tên phim:</label>
+                    <input type="text" id="movie-name">
+
+                    <label for="movie-image">Thêm hình ảnh:</label>
+                    <input type="file" id="movie-image">
+
+                    <label for="movie-description">Mô tả phim:</label>
+                    <textarea id="movie-description"></textarea>
+
+                    <label for="movie-episodes">Số tập:</label>
+                    <input type="number" id="movie-episodes">
+
+                    <label for="movie-genre">Thể loại:</label>
+                    <select id="movie-genre">
+                        <option value="action">Hành động</option>
+                        <option value="comedy">Hài</option>
+                        <option value="drama">Kịch</option>
+                        <option value="horror">Kinh dị</option>
+                        <!-- Thêm các option thể loại khác -->
+                    </select>
+
+                    <label for="movie-rating">Phân loại:</label>
+                    <input type="text" id="movie-rating">
+
+                    <label for="movie-director">Đạo diễn:</label>
+                    <input type="text" id="movie-director">
+
+                    <label for="movie-actors">Diễn viên:</label>
+                    <input type="text" id="movie-actors">
+
+                    <label for="movie-producer">Nhà sản xuất:</label>
+                    <input type="text" id="movie-producer">
+
+                    <label for="movie-release-date">Ngày phát hành:</label>
+                    <input type="date" id="movie-release-date">
+
+                    <button type="submit">Thêm</button>
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html></body></html>
