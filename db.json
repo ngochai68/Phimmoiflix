@@ -1,0 +1,26 @@
+{
+    "movies": [
+      {
+        "id": 1,
+        "title": "Movie 1",
+        "genre": "Action",
+        "release_date": "2022-01-01",
+        "description": "Description of Movie 1"
+      },
+      {
+        "id": 2,
+        "title": "Movie 2",
+        "genre": "Comedy",
+        "release_date": "2022-02-01",
+        "description": "Description of Movie 2"
+      },
+      {
+        "id": 3,
+        "title": "Movie 3",
+        "genre": "Drama",
+        "release_date": "2022-03-01",
+        "description": "Description of Movie 3"
+      }
+    ]
+  }
+  
