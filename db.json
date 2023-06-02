@@ -1,26 +1,60 @@
 {
-    "movies": [
-      {
-        "id": 1,
-        "title": "Movie 1",
-        "genre": "Action",
-        "release_date": "2022-01-01",
-        "description": "Description of Movie 1"
-      },
-      {
-        "id": 2,
-        "title": "Movie 2",
-        "genre": "Comedy",
-        "release_date": "2022-02-01",
-        "description": "Description of Movie 2"
-      },
-      {
-        "id": 3,
-        "title": "Movie 3",
-        "genre": "Drama",
-        "release_date": "2022-03-01",
-        "description": "Description of Movie 3"
-      }
-    ]
-  }
-  
+  "movies": [
+    {
+      "id": 1,
+      "name": "Người Thanh Trừng Chấp Niệm Bất Lương",
+      "current_episode": 12,
+      "total_episodes": 12,
+      "img_1_url": "./img/a_100524639_m_601_vi_260_360.webp"
+    },
+    {
+      "id": 2,
+      "name": "Vân Tương Truyện",
+      "current_episode": 36,
+      "total_episodes": 36,
+      "img_1_url": "./img/a_100481324_m_601_vi_m1_260_360.webp"
+    },
+    {
+      "id": 3,
+      "name": "Thanh Gươm Diệt Quỷ: Làng Thợ Rèn",
+      "current_episode": 6,
+      "total_episodes": 8,
+      "img_1_url": "./img/a_100532314_m_601_vi_260_360.webp"
+    },
+    {
+      "id": 4,
+      "name": "La Pluie: Cơn Mưa Khi Ấy, Em Yêu Anh",
+      "current_episode": 3,
+      "total_episodes": 12,
+      "img_1_url": "./img/a_100533848_m_601_vi_260_360.webp"
+    },
+    {
+      "id": 5,
+      "name": "Chỉ là quan hệ hôn nhân",
+      "current_episode": 24,
+      "total_episodes": 24,
+      "img_1_url": "./img/a_100481611_m_601_vi_260_360.webp"
+    },
+    {
+      "id": 6,
+      "name": "Thương Lan Quyết",
+      "current_episode": 36,
+      "total_episodes": 36,
+      "img_1_url": "./img/a_100472263_m_601_vi_m5_260_360.webp"
+    },
+    {
+      "id": 7,
+      "name": "Bed Friend: Đừng Đùa Với Lửa",
+      "current_episode": 10,
+      "total_episodes": 10,
+      "img_1_url": "./img/a_100528516_m_601_vi_260_360.webp"
+    },
+    {
+      "id": 8,
+      "name": "Khu Rừng Nhỏ Của Hai Người",
+      "current_episode": 35,
+      "total_episodes": 35,
+      "img_1_url": "./img/a_100532116_m_601_vi_260_360.webp"
+    }
+  ]
+}
