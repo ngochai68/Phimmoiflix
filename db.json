@@ -5,56 +5,216 @@
       "name": "Người Thanh Trừng Chấp Niệm Bất Lương",
       "current_episode": 12,
       "total_episodes": 12,
-      "img_1_url": "./img/a_100524639_m_601_vi_260_360.webp"
+      "img_1_url": "./img/a_100524639_m_601_vi_260_360.webp",
+      "area_id": 4,
+      "genre_ids": [2,7,11,8,3,10],
+      "rating": 3,
+      "score": 9.8,
+      "classification": "C13",
+      "year_manufacture": 2023,
+      "producer": "IQIYI"
     },
     {
       "id": 2,
       "name": "Vân Tương Truyện",
       "current_episode": 36,
       "total_episodes": 36,
-      "img_1_url": "./img/a_100481324_m_601_vi_m1_260_360.webp"
+      "img_1_url": "./img/a_100481324_m_601_vi_m1_260_360.webp",
+      "area_id": 1,
+      "genre_ids": [2,7,11,8,3,10],
+      "rating": 5,
+      "score": 9.7,
+      "classification": "C13",
+      "year_manufacture": 2023,
+      "producer": "IQIYI"
     },
     {
       "id": 3,
       "name": "Thanh Gươm Diệt Quỷ: Làng Thợ Rèn",
       "current_episode": 6,
       "total_episodes": 8,
-      "img_1_url": "./img/a_100532314_m_601_vi_260_360.webp"
+      "img_1_url": "./img/a_100532314_m_601_vi_260_360.webp",
+      "area_id": 1,
+      "genre_ids": [2,7,11,8,3,10],
+      "rating": 4,
+      "score": 9.9,
+      "classification": "C13",
+      "year_manufacture": 2023,
+      "producer": "RDR"
     },
     {
       "id": 4,
       "name": "La Pluie: Cơn Mưa Khi Ấy, Em Yêu Anh",
       "current_episode": 3,
       "total_episodes": 12,
-      "img_1_url": "./img/a_100533848_m_601_vi_260_360.webp"
+      "img_1_url": "./img/a_100533848_m_601_vi_260_360.webp",
+      "area_id": 1,
+      "genre_ids": [2,7,11,8,3,10],
+      "rating": 12,
+      "score": 9.8,
+      "classification": "C13",
+      "year_manufacture": 2023,
+      "producer": "DIWI"
     },
     {
       "id": 5,
       "name": "Chỉ là quan hệ hôn nhân",
       "current_episode": 24,
       "total_episodes": 24,
-      "img_1_url": "./img/a_100481611_m_601_vi_260_360.webp"
+      "img_1_url": "./img/a_100481611_m_601_vi_260_360.webp",
+      "area_id": 1,
+      "genre_ids": [2,7,11,8,3,10],
+      "rating": 7,
+      "score": 9.7,
+      "classification": "C13",
+      "year_manufacture": 2023,
+      "producer": "ROOO"
     },
     {
       "id": 6,
       "name": "Thương Lan Quyết",
       "current_episode": 36,
       "total_episodes": 36,
-      "img_1_url": "./img/a_100472263_m_601_vi_m5_260_360.webp"
+      "img_1_url": "./img/a_100472263_m_601_vi_m5_260_360.webp",
+      "area_id": 1,
+      "genre_ids": [2,7,11,8,3,10],
+      "rating": 15,
+      "score": 9.5,
+      "classification": "C13",
+      "year_manufacture": 2023,
+      "producer": "IQIYI"
     },
     {
       "id": 7,
       "name": "Bed Friend: Đừng Đùa Với Lửa",
       "current_episode": 10,
       "total_episodes": 10,
-      "img_1_url": "./img/a_100528516_m_601_vi_260_360.webp"
+      "img_1_url": "./img/a_100528516_m_601_vi_260_360.webp",
+      "area_id": 1,
+      "genre_ids": [2,7,11,8,3,10],
+      "rating": 9,
+      "score": 9.6,
+      "classification": "C13",
+      "year_manufacture": 2023,
+      "producer": "JDSKLDJS"
     },
     {
       "id": 8,
       "name": "Khu Rừng Nhỏ Của Hai Người",
       "current_episode": 35,
       "total_episodes": 35,
-      "img_1_url": "./img/a_100532116_m_601_vi_260_360.webp"
+      "img_1_url": "./img/a_100532116_m_601_vi_260_360.webp",
+      "area_id": 1,
+      "genre_ids": [2,7,11,8,3,10],
+      "rating": 10,
+      "score": 9.8,
+      "classification": "C13",
+      "year_manufacture": 2023,
+      "producer": "DKSKLKD"
+    }
+  ],
+  "genre": [
+    {
+      "id": 1,
+      "name": "Thanh Xuân"
+    },
+    {
+      "id": 2,
+      "name": "Bí Ẩn"
+    },
+    {
+      "id": 3,
+      "name": "Cổ Trang"
+    },
+    {
+      "id": 3,
+      "name": "Thành Thị"
+    },
+    {
+      "id": 4,
+      "name": "Lãng Mạn"
+    },
+    {
+      "id": 5,
+      "name": "Tình Yêu Ngọt Ngào"
+    },
+    {
+      "id": 6,
+      "name": "Hôn Nhân"
+    },
+    {
+      "id": 7,
+      "name": "Tình Tiết"
+    },
+    {
+      "id": 8,
+      "name": "Phim Hài"
+    },
+    {
+      "id": 9,
+      "name": "Gia Đình"
+    },
+    {
+      "id": 10,
+      "name": "Tình Bạn"
+    },
+    {
+      "id": 11,
+      "name": "Viễn Tưởng"
+    },
+    {
+      "id": 12,
+      "name": "Tội Phạm"
+    },
+    {
+      "id": 13,
+      "name": "Chiến Tranh"
+    },
+    {
+      "id": 14,
+      "name": "Tiểu Thuyết Chuyển Thể"
+    },
+    {
+      "id": 15,
+      "name": "Hiện Đại"
+    },
+    {
+      "id": 16,
+      "name": "Cổ Đại"
+    }
+  ],
+  "area": [
+    {
+      "id": 1,
+      "name": "Trung Quốc đại lục"
+    },
+    {
+      "id": 2,
+      "name": "Hàn Quốc"
+    },
+    {
+      "id": 3,
+      "name": "Thái Lan"
+    },
+    {
+      "id": 4,
+      "name": "Đài Loan"
+    },
+    {
+      "id": 5,
+      "name": "Nhật Bản"
+    },
+    {
+      "id": 6,
+      "name": "Malaysia"
+    },
+    {
+      "id": 7,
+      "name": "Mỹ"
+    },
+    {
+      "id": 8,
+      "name": "Anh"
     }
   ]
 }
