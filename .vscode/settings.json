@@ -6,5 +6,8 @@
     },
     "[html]": {
         "editor.defaultFormatter": "mblode.pretty-formatter"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "mblode.pretty-formatter"
     }
 }
