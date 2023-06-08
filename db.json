@@ -2,104 +2,56 @@
     "movies": [
         {
             "id": 1,
-            "name": "Người Thanh Trừng Chấp Niệm Bất Lương",
+            "name": "Hoa Nhung",
             "episodes": [
                 {
                     "id": 1,
                     "name": "Tập 1",
-                    "videoUrl": "https://example.com/video1.mp4"
+                    "img1Url": "./img/v_168372728_m_601_zh-CN_m1_284_160.webp",
+                    "videoUrl": "https://www.youtube.com/embed/kgpiK3_4zAo"
                 },
                 {
                     "id": 2,
                     "name": "Tập 2",
-                    "videoUrl": "https://example.com/video1.mp4"
+                    "img1Url": "./img/v_172801404_m_601_zh-CN_m1_284_160.webp",
+                    "videoUrl": "https://www.youtube.com/embed/ECn9uQNZBpU"
                 },
                 {
                     "id": 3,
                     "name": "Tập 3",
-                    "videoUrl": "https://example.com/video1.mp4"
-                },
-                {
-                    "id": 4,
-                    "name": "Tập 4",
-                    "videoUrl": "https://example.com/video1.mp4"
-                },
-                {
-                    "id": 5,
-                    "name": "Tập 5",
-                    "videoUrl": "https://example.com/video1.mp4"
-                },
-                {
-                    "id": 6,
-                    "name": "Tập 6",
-                    "videoUrl": "https://example.com/video1.mp4"
-                },
-                {
-                    "id": 7,
-                    "name": "Tập 7",
-                    "videoUrl": "https://example.com/video1.mp4"
-                },
-                {
-                    "id": 8,
-                    "name": "Tập 8",
-                    "videoUrl": "https://example.com/video1.mp4"
-                },
-                {
-                    "id": 9,
-                    "name": "Tập 9",
-                    "videoUrl": "https://example.com/video1.mp4"
-                },
-                {
-                    "id": 10,
-                    "name": "Tập 10",
-                    "videoUrl": "https://example.com/video1.mp4"
-                },
-                {
-                    "id":11,
-                    "name": "Tập 11",
-                    "videoUrl": "https://example.com/video1.mp4"
-                },
-                {
-                    "id": 12,
-                    "name": "Tập 12",
-                    "videoUrl": "https://example.com/video1.mp4"
+                    "img1Url": "./img/v_172805761_m_601_zh-CN_284_160.webp",
+                    "videoUrl": "https://www.youtube.com/embed/uymA6wDYoqg"
                 }
+                
             ],
-            "totalEpisodes": 12,
-            "img1Url": "./img/a_100524639_m_601_vi_260_360.webp",
-            "img2Url": "./img/a_100524639_m_601_vi_1013_638.webp",
-            "areaId": 4,
+            "totalEpisodes": 36,
+            "img1Url": "./img/a_100480413_m_601_vi_m2_260_360.webp",
+            "img2Url": "./img/a_100480413_m_601_vi_m2_1013_638.webp",
+            "areaId": 1,
             "genreIds": [
-                2,
-                7,
+                4,
                 11,
-                8,
+                5,
                 3,
-                10
+                14
             ],
-            "rating": 3,
-            "score": 9.8,
+            "rating": 1,
+            "score": 9.6,
+            "numberReviews": 1500,
             "classification": "C13",
             "yearManufacture": 2023,
-            "director": "Nguyễn Ngọc Hải",
+            "director": "Hu Yi Juan",
             "performer": [
-                "Zengjinghua,Tseng Jing-hua",
-                "Vivian Sung",
-                "Cian-You Peng,Peng Cian",
-                "cheryl,Cheryl Yang",
-                "Fan Shaoxun,Fandy Fan",
-                "Joanne Missingham",
-                "Ma Li Ou,Mario Pu",
-                "Zhong Xin Ling,CHUNG Hsin-Ling",
-                "Zheng Ren Shuo,Rexen Cheng",
-                "Ji Qin,CHI CHIN",
-                "Joseph Zheng",
-                "Derek Chang,Zhang Xuan Rui",
-                "Hou Yan Xi",
-                "Chanon Santinatornkul",
-                "Weiweima"
+                "Cúc Tịnh Y",
+                "Fiction",
+                "Lưu Đông Thấm",
+                "Mã Nguyệt",
+                "Tingyu LU",
+                "Zhang Zhi Hao",
+                "Xinran Song",
+                "Nie Zi Hao"
             ],
-            "describe": "\"Người Thanh Trừng Chấp Niệm Bất Lương\" là một bộ phim truyền hình nguyên tác của Đài Loan do trạm quốc tế iQIYI khởi chiếu,đạo diễn bởi Lâm Quán Huệ(\"Hôm Nat, Trời Rất \"), do Tăng Kính Hoa (\"Cái tên khắc sâu trong tim người \"), Tống Vân Hoa ( \"Thời thiếu nữ của tôi \") và Bành Thiên Hựu (\"Tội nhân vô định \") đóng vai chính. Học sinh trung học Bồ Nhất Vĩnh(Tăng Kính Hoa thủ vai)rơi vào trạng thái hôn mê sau khi gặp phải một tai nạn xe hơi trên bờ vực sinh tử, sau khi tỉnh dậy thì bất ngờ sở hữu siêu năng lực(Bành Thiên Hựu thủ vai), cả ba bắt tay một hành trình tuyệt vời và điên rồ để cùng nhau chiến đấu với quái vật.Phim sẽ được phát sóng trực tuyến trên iQiyi quốc tế(iq.com)từ ngày 15 / 4. ",
+            "describe": "\"Hoa Dung\" do Hồ Ý Quyên, Trần Quốc Hoa làm đạo diễn và có sự tham gia của Cúc Tịnh Y, Quách Tuấn Thần, Lưu Đông Thấm, Mã Nguyệt, Lục Đình Ngọc. Bộ phim được chuyển thể từ tiểu thuyết nổi tiếng \"Ngộ Trường Sinh\" của Lâm Gia Thành, kể về chuyện tình ngược luyến giữa phượng hoàng chuyển thế và thần thái dương, từ yêu nhau hận nhau đến thành toàn cho nhau. Tình yêu khiến người ta điên cuồng, cầu không được, bỏ không xong. Vì yêu sinh ra hận, vì hận sinh ra sợ hãi, nàng đã đánh cược tất cả, tái sinh niết bàn. Bộ phim sẽ được phát sóng trực tuyến trên iQiyi Quốc tế (iq.com).",
             "producer": "IQIYI"
         }
     ],
@@ -191,3 +143,10 @@
         }
     ]
 }
+
+
+
+
+
+
+

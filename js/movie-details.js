@@ -3,97 +3,123 @@ const movieId = urlParams.get('id');
 
 // Lấy dữ liệu từ API
 async function fetchData(url) {
-    try {
-        const response = await fetch(url);
-        return response.json();
-    } catch (error) {
-        console.error('Error:', error);
-    }
+  try {
+    const response = await fetch(url);
+    return response.json();
+  } catch (error) {
+    console.error('Error:', error);
+  }
 }
 
 // Lấy dữ liệu chi tiết phim
 async function fetchMovieById(movieId) {
-    return fetchData(`http://localhost:3000/movies/${movieId}`);
+  return fetchData(`http://localhost:3000/movies/${movieId}`);
 }
 
 // Lấy dữ liệu thể loại
 async function fetchGenresData() {
-    return fetchData(`http://localhost:3000/genre`);
+  return fetchData(`http://localhost:3000/genre`);
 }
 
 // Lấy dữ liệu khu vực
 async function fetchAreasData() {
-    return fetchData(`http://localhost:3000/area`);
+  return fetchData(`http://localhost:3000/area`);
 }
 
 // Render dữ liệu trang chi tiết
 async function renderMovieDetails() {
-    const movie = await fetchMovieById(movieId);
+  const movie = await fetchMovieById(movieId);
 
-    const contentWrapper = document.querySelector('.contentWrapper-movie-details .focus-info-wrapper');
-    const movieTitleElement = contentWrapper.querySelector('.focus-info-title');
-    const infoMaskElement = contentWrapper.querySelector('.focus-info-mark');
-    const infoTagElement = contentWrapper.querySelector('.focus-info-tag');
-    const areaGenreElement = contentWrapper.querySelector('.focus-info-tag-type');
-    const directorPerformerElement = contentWrapper.querySelector('.focus-info-tag-o');
-    const describeElement = contentWrapper.querySelector('.focus-info-desc');
-    const imgLinkBannerElement = document.querySelector('.movie-details-box .focus-content .focus-wrapper');
+  const contentWrapper = document.querySelector(
+    '.contentWrapper-movie-details .focus-info-wrapper'
+  );
+  const imgLinkBannerElement = document.querySelector(
+    '.movie-details-box .focus-content .focus-wrapper'
+  );
+  const episolesListElement = document.querySelector(
+    '.contentWrapper .contentWrapper-episode-lists .video-list-wrapper'
+  );
+  const tabPageWrapElement = document.querySelector(
+    '.contentWrapper .contentWrapper-episode-lists .tab-pages-wrap-single'
+  );
 
-    const [contentInfoMask, contentInfoTag, contentAreaGenre, contentDirectorPerformer, contentDescribe, contentImgLinkBanner] = await Promise.all([
-        generateContentInfoMask(movie),
-        generateContentInfoTag(movie),
-        generateContentAreaGenre(movie),
-        generateContentDirectorPerformer(movie),
-        generateContentDescribe(movie),
-        generateContentImgLinkBanner(movie)
-    ]);
+  const {
+    movieTitleElement,
+    infoMaskElement,
+    infoTagElement,
+    areaGenreElement,
+    directorPerformerElement,
+    describeElement,
+  } = {
+    movieTitleElement: contentWrapper.querySelector('.focus-info-title'),
+    infoMaskElement: contentWrapper.querySelector('.focus-info-mark'),
+    infoTagElement: contentWrapper.querySelector('.focus-info-tag'),
+    areaGenreElement: contentWrapper.querySelector('.focus-info-tag-type'),
+    directorPerformerElement: contentWrapper.querySelector('.focus-info-tag-o'),
+    describeElement: contentWrapper.querySelector('.focus-info-desc'),
+  };
 
-    movieTitleElement.innerHTML = movie.name;
-    infoMaskElement.innerHTML = contentInfoMask;
-    infoTagElement.innerHTML = contentInfoTag;
-    areaGenreElement.innerHTML = contentAreaGenre;
-    directorPerformerElement.innerHTML = contentDirectorPerformer;
-    describeElement.innerHTML = contentDescribe;
-    imgLinkBannerElement.innerHTML = contentImgLinkBanner;
+  const [
+    contentInfoMask,
+    contentInfoTag,
+    contentAreaGenre,
+    contentDirectorPerformer,
+    contentDescribe,
+    contentImgLinkBanner,
+    contentEpisodesList,
+    contentEpisodesPages,
+  ] = await Promise.all([
+    generateContentInfoMask(movie),
+    generateContentInfoTag(movie),
+    generateContentAreaGenre(movie),
+    generateContentDirectorPerformer(movie),
+    generateContentDescribe(movie),
+    generateContentImgLinkBanner(movie),
+    generateContentEpisodesList(movie),
+    generateContentEpisodesPages(movie),
+  ]);
+
+  movieTitleElement.innerHTML = movie.name;
+  infoMaskElement.innerHTML = contentInfoMask;
+  infoTagElement.innerHTML = contentInfoTag;
+  areaGenreElement.innerHTML = contentAreaGenre;
+  directorPerformerElement.innerHTML = contentDirectorPerformer;
+  describeElement.innerHTML = contentDescribe;
+  imgLinkBannerElement.innerHTML = contentImgLinkBanner;
+  episolesListElement.innerHTML = contentEpisodesList;
+  tabPageWrapElement.innerHTML = contentEpisodesPages;
 }
-
 
 // Lấy dữ liệu contentInfoMask
 function generateContentInfoMask(movie) {
-    const isTopRating = (rating) => rating >= 1 && rating <= 10;
-    const isIQIYIProducer = (producer) => producer === 'IQIYI';
+  const isTopRating = rating => rating >= 1 && rating <= 10;
+  const isIQIYIProducer = producer => producer === 'IQIYI';
 
-    let contentInfoMask = '';
+  let contentInfoMask = '';
 
-    if (isTopRating(movie.rating)) {
-        contentInfoMask = `<span class="focus-item-label-top">
-                            <span class="focus-item-label-rank">TOP ${
-            movie.rating
-        }</span>
+  if (isTopRating(movie.rating)) {
+    contentInfoMask = `<span class="focus-item-label-top">
+                            <span class="focus-item-label-rank">TOP ${movie.rating}</span>
                             Top Phim Thịnh Hành
                           </span>`;
-    }
+  }
 
-    if (isIQIYIProducer(movie.producer)) {
-        contentInfoMask += '<span class="focus-item-label-original">iQIYI sản xuất</span>';
-    }
+  if (isIQIYIProducer(movie.producer)) {
+    contentInfoMask += '<span class="focus-item-label-original">iQIYI sản xuất</span>';
+  }
 
-    return contentInfoMask;
+  return contentInfoMask;
 }
-
 
 // Lấy dữ liệu contentInfoTag
 function generateContentInfoTag(movie) {
-    const {
-        score,
-        classification,
-        yearManufacture,
-        episodes,
-        totalEpisodes
-    } = movie;
-    const episodeText = episodes.length === totalEpisodes ? `${totalEpisodes} tập` : `Cập nhật tới tập ${episodes.length} / tổng cộng ${totalEpisodes} tập`;
+  const { score, classification, yearManufacture, episodes, totalEpisodes } = movie;
+  const episodeText =
+    episodes.length === totalEpisodes
+      ? `${totalEpisodes} tập`
+      : `Cập nhật tới tập ${episodes.length} / tổng cộng ${totalEpisodes} tập`;
 
-    const contentInfoTag = `<div class="pcScore">
+  const contentInfoTag = `<div class="pcScore">
                               <div class="pcScore-1">
                                   <div class="album-score">
                                       <div class="all-score-info">
@@ -122,77 +148,64 @@ function generateContentInfoTag(movie) {
                           <div class="broken-line"></div>
                           <span>${episodeText}</span>`;
 
-    return contentInfoTag;
+  return contentInfoTag;
 }
-
 
 // Lấy dữ liệu contentAreaGenre
 async function generateContentAreaGenre(movie) {
-    const [areas, genres] = await Promise.all([fetchAreasData(), fetchGenresData()]);
+  const [areas, genres] = await Promise.all([fetchAreasData(), fetchGenresData()]);
 
-    const area = areas.find((area) => area.id === movie.areaId);
+  const area = areas.find(area => area.id === movie.areaId);
 
-    const movieGenres = await Promise.all(movie.genreIds.map(async (genreId) => {
-        const genre = genres.find((genre) => genre.id === genreId);
-        return `<span class="type-style">${
-            genre.name
-        }</span>`;
-    }));
+  const movieGenres = await Promise.all(
+    movie.genreIds.map(async genreId => {
+      const genre = genres.find(genre => genre.id === genreId);
+      return `<span class="type-style">${genre.name}</span>`;
+    })
+  );
 
-    return `<span class="type-style">${
-        area.name
-    }</span>${
-        movieGenres.join('')
-    }`;
+  return `<span class="type-style">${area.name}</span>${movieGenres.join('')}`;
 }
-
 
 // Lấy dữ liệu contentDirectorPerformer
 function generateContentDirectorPerformer(movie) {
-    const nameDirector = `
-    <div class="tag-inline">
-      <div>
+  const performersHTML = movie.performer
+    .map(performer => `<a href="">${performer}</a>`)
+    .join('<i>, </i>');
+
+  const renderedHTML = `
+      <div class="tag-inline">
+        <div>
           <span class="key">
-              <h3>Đạo diễn</h3>
-              :
+            <h3>Đạo diễn</h3>:
           </span>
           <span>
-              <a href="">${
-        movie.director
-    }</a>
+            <a href="">${movie.director}</a>
           </span>
+        </div>
       </div>
-    </div>`;
-
-    const namePerformers = `
-    <div class="tag-inline">
-      <div>
+      <div class="tag-inline">
+        <div>
           <span class="key">
-              <h3>Diễn viên chính</h3>
-              :
+            <h3>Diễn viên chính</h3>:
           </span>
-          ${
-        movie.performer.map((performer) => `<span><a href="">${performer}</a><i>,</i></span>`).join('')
-    }
+          ${performersHTML}
+        </div>
       </div>
-    </div>`;
+    `;
 
-    const renderedHTML = `${nameDirector}${namePerformers}`;
-
-    return renderedHTML;
+  return renderedHTML;
 }
 
 // Lấy dữ liệu contentDescribe
 function generateContentDescribe(movie) {
-    const describeHTML = `
+  const describeHTML = `
                               <span class="key">
                                   <h3>Miêu tả</h3>
                                   :
                               </span>
                               <span>
-                                  ${
-        movie.describe
-    }                                                                                                                                        trên iQiyi quốc tế(iq.com) từ ngày 15/4.
+                                  ${movie.describe}                                                                                                                                        trên iQiyi quốc tế(iq.com) từ ngày 15/4.
                               </span>
                               <div class="intl-album-des-btn">
                                   <div class="intl-album-des-cover"></div>
@@ -218,16 +231,62 @@ function generateContentDescribe(movie) {
                                       </div>
                                   </div>
                               </div>`;
-    return describeHTML;
+  return describeHTML;
 }
 
 // Lấy dữ liệu contentImgBanner
 function generateContentImgLinkBanner(movie) {
-    return `<a href="" class="focus-img-link">
+  return `<a href="" class="focus-img-link">
                 <img src="${movie.img2Url}" alt=""/>
             </a>
             <div class="left-layer"></div>
             <div class="bottom-layer"></div>`;
 }
+
+// Lấy dữ liệu contentEpisodesList
+function generateContentEpisodesList(movie) {
+  const episodesListHtml = movie.episodes
+    .map(movieEpisode => {
+      return `
+            <div class="horizontal">
+                <div class="plist-img-wrap">
+                    <div>
+                        <a href="">
+                            <div class="pic-box">
+                                <span>
+                                    <img src="${movieEpisode.img1Url}" alt=""/>
+                                </span>
+                                <div class="update-info-layer">
+                                    <div class="update-info-mask"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="">
+                        <div class="text-box">
+                            <p class="title">${movie.name} ${movieEpisode.name}</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        `;
+    })
+    .join('');
+
+  return episodesListHtml;
+}
+
+// Lấy dữ liệu contentEpisodesPages
+function generateContentEpisodesPages(movie) {
+  const episodeNumbers = movie.episodes.map(episode => parseInt(episode.name.match(/\d+/)[0]));
+  const minEpisodeNumber = Math.min(...episodeNumbers);
+  const maxEpisodeNumber = Math.max(...episodeNumbers);
+
+  return `<div class="episodes-pages-tab-single">
+              <div class="pages-tab-content">Chọn tập ${minEpisodeNumber}-${maxEpisodeNumber}</div>
+          </div>`;
+}
+
+
 
 renderMovieDetails();
